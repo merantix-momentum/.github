@@ -1,7 +1,7 @@
 name: Maintenance Work
 description: Track planned maintenance work
 title: "[MAINTENANCE] Add the title"
-type: ["maintenance"]
+type: "maintenance"
 assignees: []
 body:
   - type: markdown
