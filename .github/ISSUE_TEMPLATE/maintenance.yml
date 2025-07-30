@@ -1,0 +1,35 @@
+name: Maintenance Work
+description: Track planned maintenance work
+title: "[MAINTENANCE] Add the title"
+type: ["maintenance"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## Maintenance Work Request
+        
+        Please provide a clear and descriptive title above, replacing the placeholder.
+        
+  - type: dropdown
+    id: maintenance-type
+    attributes:
+      label: Maintenance Type
+      description: What type of maintenance is this?
+      options:
+        - Dependency fixes
+        - Backups
+        - Functionality check
+        - Security audits
+        - Docker image checks
+    validations:
+      required: true
+      
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Please provide a detailed description of the maintenance work
+      placeholder: Describe what needs to be done and why this maintenance is needed
+    validations:
+      required: true
