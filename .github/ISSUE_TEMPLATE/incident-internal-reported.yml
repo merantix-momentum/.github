@@ -1,4 +1,4 @@
-name: Client Incident Report
+name: Internal Incident Report
 description: Report an incident reported by us
 title: "[INCIDENT] "
 type: "incident-internal-reported"
