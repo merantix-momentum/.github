@@ -1,28 +1,23 @@
-name: Internal Incident Report
-description: Report an incident reported by us
+name: Incident Report
+description: Report an incident
 title: "[INCIDENT] "
-type: "incident-internal-reported"
 assignees: []
 body:
   - type: markdown
     attributes:
       value: |
-        ## Client Incident Report
+        ## Incident Report
         
         Please provide a clear and descriptive title above, replacing the placeholder.
         
   - type: dropdown
-    id: incident-type
+    id: reporter
     attributes:
-      label: Incident Type
-      description: What type of incident is this?
+      label: Reporter
+      description: Who reported the incident
       options:
-        - Service Outage
-        - Performance Issue
-        - Security Issue
-        - Data Issue
-        - Bug/Error
-        - Other
+        - Internal
+        - Client
     validations:
       required: true
       
@@ -30,7 +25,7 @@ body:
     id: description
     attributes:
       label: Description
-      description: Please provide a detailed description of the incident as reported by us
+      description: Please provide a detailed description of the incident as reported either by us or the client
       placeholder: Describe what the client reported, including any relevant details about the issue
     validations:
       required: true
