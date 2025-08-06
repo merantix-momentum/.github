@@ -1,7 +1,7 @@
 name: Incident Report
 description: Report an incident
 title: "[INCIDENT] "
-lables: ["incident"]
+labels: ["incident"]
 assignees: []
 body:
   - type: markdown
